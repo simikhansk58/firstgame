@@ -99,14 +99,14 @@ function Panel({ item, priority, isFirst = false }) {
 />
 
    <motion.div 
-  className="relative w-full overflow-hidden block md:hidden" 
+  className="relative w-full overflow-hidden block lg:hidden" 
   style={{ height }}
 >
   <Image
     src={item.src}
     alt={item.alt}
     fill
-    className="object-contain transform scale-350" // 3.5× zoom
+    className="object-contain transform scale-300" // 3.5× zoom
     priority
   />
 </motion.div>

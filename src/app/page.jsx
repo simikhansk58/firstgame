@@ -11,7 +11,7 @@ const Home = ()=> {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-    <div className="flex flex-col gap-4 lg:flex-row h-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 py-20">
+    <div className="flex flex-col gap-4 lg:flex-row h-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 py-5 pt-5">
       {/*ImageContainer */}
       <div className="relative h-1/2 lg:w-1/2 lg:h-full">
         <Image src="/hero.png" alt="" fill className="object-contain"/>

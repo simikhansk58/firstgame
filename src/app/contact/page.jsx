@@ -101,7 +101,7 @@ function Panel({ item, priority, isFirst = false }) {
           src={item.src}
           alt={item.alt}
           fill
-          className="object-contain md:hidden lg:hidden"
+          className="object-contain lg:hidden"
           priority={priority}
         />
       {/* Text overlay */}

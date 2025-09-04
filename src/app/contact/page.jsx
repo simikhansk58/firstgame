@@ -98,14 +98,19 @@ function Panel({ item, priority, isFirst = false }) {
   priority={priority}
 />
 
-     <Image
-  src={item.src}
-  alt={item.alt}
-  width={800}   // fixed width
-  height={1600}  // fixed height
-  className="object-cover block sm:hidden"
-  priority={priority}
-/>
+   <motion.div 
+  className="relative w-full overflow-hidden block md:hidden" 
+  style={{ height }}
+>
+  <Image
+    src={item.src}
+    alt={item.alt}
+    fill
+    className="object-contain transform scale-350" // 3.5× zoom
+    priority
+  />
+</motion.div>
+
 
 
       {/* Text overlay */}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useMemo } from "react";
+import TabletImage from "../experiment/experiment";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
@@ -107,28 +108,12 @@ function Panel({ item, priority, isFirst = false }) {
     src={item.src}
     alt={item.alt}
     fill
-    className="object-contain object-center transform scale-330" // 3.5× zoom
+    className="object-contain object-center transform scale-345" // 3.5× zoom
     priority
   />
 </motion.div>
 {/* md Screen Image */}
-
-<motion.div 
-  className="relative w-full overflow-hidden hidden lg:hidden" 
-  style={{ height: height - 20 }}
->
-  <Image
-    src={item.src}
-    alt={item.alt}
-    fill
-    className="object-contain object-center transform scale-100" // 3.5× zoom
-    priority
-  />
-</motion.div>
-
-
-
-
+<TabletImage/>
       {/* Text overlay */}
       <motion.div
         className="absolute inset-0 flex items-center p-6 sm:p-10 will-change-transform"

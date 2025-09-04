@@ -15,7 +15,7 @@ const SECTIONS = [
     href: "/about",
   },
   {
-    src: "/img2.jpg",
+    src: "/img22.jpg",
     alt: "Two",
     title: "Second Section",
     desc: "This is the description for the first section.",
@@ -29,14 +29,14 @@ const SECTIONS = [
     href: "/about",
   },
   {
-    src: "/img5.jpg",
+    src: "/img7.png",
     alt: "Four",
     title: "Fifth Section",
     desc: "This is the description for the first section.",
     href: "/about",
   },
   {
-    src: "/img6.jpg",
+    src: "/img8.png",
     alt: "Five",
     title: "Six Section",
     desc: "This is the description for the first section.",
@@ -91,19 +91,23 @@ function Panel({ item, priority, isFirst = false }) {
       {/* Background image */}
       
         <Image
-          src={item.src}
-          alt={item.alt}
-          fill
-          className="object-cover"
-          priority={priority}
-        />
-        <Image
-          src={item.src}
-          alt={item.alt}
-          fill
-          className="object-contain lg:hidden"
-          priority={priority}
-        />
+  src={item.src}
+  alt={item.alt}
+  fill
+  className="object-cover hidden sm:block"
+  priority={priority}
+/>
+
+     <Image
+  src={item.src}
+  alt={item.alt}
+  width={800}   // fixed width
+  height={1600}  // fixed height
+  className="object-cover block sm:hidden"
+  priority={priority}
+/>
+
+
       {/* Text overlay */}
       <motion.div
         className="absolute inset-0 flex items-center p-6 sm:p-10 will-change-transform"

@@ -100,7 +100,7 @@ function Panel({ item, priority, isFirst = false }) {
 {/* Mobile Image */}
 
   <motion.div
-  className="relative w-full max-w-[1030px] overflow-hidden block lg:hidden"
+  className="relative w-full max-w-[1030px] min-w-[650px] overflow-hidden block lg:hidden"
   style={{ height }}
 >
   <Image
@@ -110,7 +110,6 @@ function Panel({ item, priority, isFirst = false }) {
     className="
       object-contain object-center
       transform
-      scale-345    /* mobile default */
       sm:scale-250    /* small tablets */
       md:scale-250    /* larger tablets */
     "

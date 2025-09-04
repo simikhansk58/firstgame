@@ -29,14 +29,14 @@ const SECTIONS = [
     href: "/about",
   },
   {
-    src: "/img7.png",
+    src: "/img7.jpg",
     alt: "Four",
     title: "Fifth Section",
     desc: "This is the description for the first section.",
     href: "/about",
   },
   {
-    src: "/img8.png",
+    src: "/img8.jpg",
     alt: "Five",
     title: "Six Section",
     desc: "This is the description for the first section.",

@@ -94,9 +94,10 @@ function Panel({ item, priority, isFirst = false }) {
   src={item.src}
   alt={item.alt}
   fill
-  className="object-cover hidden sm:block"
+  className="object-cover hidden sm:block md:block"
   priority={priority}
 />
+{/* Mobile Image */}
 
    <motion.div 
   className="relative w-full overflow-hidden block lg:hidden" 
@@ -106,10 +107,25 @@ function Panel({ item, priority, isFirst = false }) {
     src={item.src}
     alt={item.alt}
     fill
-    className="object-contain transform scale-300" // 3.5× zoom
+    className="object-contain object-center transform scale-330" // 3.5× zoom
     priority
   />
 </motion.div>
+{/* md Screen Image */}
+
+<motion.div 
+  className="relative w-full overflow-hidden hidden lg:hidden" 
+  style={{ height }}
+>
+  <Image
+    src={item.src}
+    alt={item.alt}
+    fill
+    className="object-contain object-center transform scale-120" // 3.5× zoom
+    priority
+  />
+</motion.div>
+
 
 
 
